@@ -26,7 +26,7 @@ Unfortunately, I practically do not know foreign languages and all the text is t
 
 ## Сompleted programming work
 
-[test site with information about me](https://github.com/EvgeniyPivovarov/trial_site.git)
+[test site with information about me](https://evgeniypivovarov.github.io/trial_site/)
 
 > Made from a template
 
