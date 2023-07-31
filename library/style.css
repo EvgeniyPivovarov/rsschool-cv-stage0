@@ -532,6 +532,34 @@ a:hover {
   width: 200px;
   height: 40px;
 }
+.shop_menu_beverages_p_dirinc_price {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 20px 0px 20px 0px;
+  display: inline-block;
+  width: 21px;
+  height: 40px;
+}
+.shop_menu_beverages_p_sweet_price {
+  color: #000;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 2px;
+  text-transform: capitalize;
+  margin: 20px 0px 20px 0px;
+  display: inline-block;
+  width: 37px;
+  height: 40px;
+}
 .CoffeeShop_horizontal_line {
   height: 1px;
   width: 100px;
@@ -543,12 +571,12 @@ a:hover {
   margin-right: 0px;
   float: right;
 }
-#drinks_price {
+/* #drinks_price {
   width: 21px;
-}
-#sweet_price {
+} */
+/* #sweet_price {
   width: 37px;
-}
+} */
 #shop_menu_beverages_sweet_p {
   width: 213px;
 }
@@ -916,5 +944,8 @@ input[type="text"]::placeholder {
   font-weight: 400;
   line-height: 40px; /* 200% */
   letter-spacing: 2px;
+  text-decoration: none;
+}
+a {
   text-decoration: none;
 }
