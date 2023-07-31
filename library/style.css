@@ -127,7 +127,19 @@ a:hover {
   width: 100%;
   margin: 0 auto;
 }
-#about_img {
+#about_img1 {
+  width: 450px;
+  height: 560px;
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+#about_img2 {
+  width: 450px;
+  height: 560px;
+  flex-shrink: 0;
+  margin-right: 25px;
+}
+#about_img3 {
   width: 450px;
   height: 560px;
   flex-shrink: 0;
@@ -566,18 +578,59 @@ a:hover {
   margin: 39px 60px 40px 57px;
   border-bottom: 1px solid #bb945f;
 }
-#shop_menu_list_container_sweet {
+#shop_menu_list_container_sweet1 {
   width: 482px;
   margin-right: 0px;
   float: right;
 }
+#shop_menu_list_container_sweet2 {
+  width: 482px;
+  margin-right: 0px;
+  float: right;
+}
+#shop_menu_list_container_sweet3 {
+  width: 482px;
+  margin-right: 0px;
+  float: right;
+}
+#shop_menu_list_container_sweet4 {
+  width: 482px;
+  margin-right: 0px;
+  float: right;
+}
+#shop_menu_list_container_sweet5 {
+  width: 482px;
+  margin-right: 0px;
+  float: right;
+}
+#shop_menu_list_container_sweet6 {
+  width: 482px;
+  margin-right: 0px;
+  float: right;
+}
+
 /* #drinks_price {
   width: 21px;
 } */
 /* #sweet_price {
   width: 37px;
 } */
-#shop_menu_beverages_sweet_p {
+#shop_menu_beverages_sweet_p1 {
+  width: 213px;
+}
+#shop_menu_beverages_sweet_p2 {
+  width: 213px;
+}
+#shop_menu_beverages_sweet_p3 {
+  width: 213px;
+}
+#shop_menu_beverages_sweet_p4 {
+  width: 213px;
+}
+#shop_menu_beverages_sweet_p5 {
+  width: 213px;
+}
+#shop_menu_beverages_sweet_p6 {
   width: 213px;
 }
 
