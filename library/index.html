@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="/rsschool-cv/library/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -22,8 +23,8 @@
   <body>
     <div class="container">
       <header class="container_header">
-        <nav>
-          <h1 class="style_h1">Brooklyn Public Library</h1>
+        <h1 class="style_h1">Brooklyn Public Library</h1>
+        <nav class="nav_conrainer">
           <ul class="nav_ul">
             <li class="nav_li"><a href="#link_About">About</a></li>
             <li class="nav_li"><a href="#link_Favorites">Favorites</a></li>
@@ -31,31 +32,34 @@
             <li class="nav_li"><a href="#link_Contacts">Contacts</a></li>
             <li class="nav_li"><a href="#link_LibraryCard">Library Card</a></li>
           </ul>
-          <img
-            src="/rsschool-cv/library/Image/icon_profile.jpg"
-            alt="icon_profile"
-            class="nav_img"
-          >
         </nav>
+        <img
+          src="/rsschool-cv/library/Image/icon_profile.jpg"
+          alt="icon_profile"
+          class="nav_img"
+        >
+        <div class="burger" id="burger"><span></span></div>
       </header>
 
       <main>
-        <div class="main_img">
-          <img
-            src="/rsschool-cv/library/Image/main-1440х600.jpg"
-            alt="main image"
-            class="main_img"
-          >
-          <p class="text_on_picture">
-            <span class="main_p_span"
-              >WELCOME<br>TO THE BROOKLYN<br>LIBRARY</span
+        <section id="section1">
+          <div class="container_main_img">
+            <img
+              src="/rsschool-cv/library/Image/main-1440х600.jpg"
+              alt="main image"
+              class="main_img"
             >
-          </p>
-        </div>
+            <p class="text_on_picture">
+              <span class="main_p_span"
+                >WELCOME<br>TO THE BROOKLYN<br>LIBRARY</span
+              >
+            </p>
+          </div>
+        </section>
 
         <!-- Section about -->
 
-        <section>
+        <section id="section1">
           <h2 id="link_About" class="main_h2">About</h2>
           <div class="main_horizontal_line"></div>
           <p class="main_p">
@@ -63,6 +67,11 @@
             and a cozy coffee shop inside
           </p>
           <div class="about_img">
+            <img
+              id="Carret_Left"
+              src="/rsschool-cv/library/Image/Carret_Left.png"
+              alt="Carret_Left"
+            >
             <img
               id="about_img1"
               src="/rsschool-cv/library/Image/picture1.jpg"
@@ -78,6 +87,11 @@
               src="/rsschool-cv/library/Image/picture3.jpg"
               alt="picture3"
             >
+            <img
+              id="Carret_Right"
+              src="/rsschool-cv/library/Image/Carret_Right.png"
+              alt="Carret_Right"
+            >
           </div>
           <!-- button -->
           <div class="about_switch">
@@ -90,12 +104,18 @@
             <div class="about_switch_outer3">
               <div class="about_switch_interior3"></div>
             </div>
+            <div class="about_switch_outer4">
+              <div class="about_switch_interior4"></div>
+            </div>
+            <div class="about_switch_outer5">
+              <div class="about_switch_interior5"></div>
+            </div>
           </div>
         </section>
 
         <!-- Section Favorites -->
 
-        <section>
+        <section id="section1">
           <h2 id="link_Favorites" class="main_h2">Favorites</h2>
           <div class="main_horizontal_line"></div>
           <p class="p_selection_of_favorites">Pick facorites of season</p>
@@ -112,17 +132,17 @@
             <span class="radio_text">Winter</span>
           </label>
           <label for="radio-two" class="radio_button">
-            <input type="radio" name="demo" value="one" id="radio-two" >
+            <input type="radio" name="demo" value="one" id="radio-two">
             <span class="radio"></span>
             <span class="radio_text">Spring</span>
           </label>
           <label for="radio-three" class="radio_button">
-            <input type="radio" name="demo" value="one" id="radio-three" >
+            <input type="radio" name="demo" value="one" id="radio-three">
             <span class="radio"></span>
             <span class="radio_text">Summer</span>
           </label>
           <label for="radio-four" class="radio_button">
-            <input type="radio" name="demo" value="one" id="radio-four" >
+            <input type="radio" name="demo" value="one" id="radio-four">
             <span class="radio"></span>
             <span class="radio_text">Autumn</span>
           </label>
@@ -211,14 +231,291 @@
                 src="/rsschool-cv/library/Image/bookСover4.jpg"
                 alt="bookCover4"
                 class="card_img"
-             >
+              >
+            </div>
+            <!-- карточка 5 -->
+            <div class="card_five">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">The Body</p>
+              <p class="card_name_capitalize">By Stephen King</p>
+              <p class="card_description">
+                Powerful novel that takes you back to a nostalgic time,
+                exploring both the beauty and danger and loss of innocence that
+                is youth.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_five">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover5.jpg"
+                alt="bookCover5"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 6 -->
+            <div class="card_six">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">The Body</p>
+              <p class="card_name_uppercase">
+                Carry: A Memoir of Survival on Stolen Land
+              </p>
+              <p class="card_name_capitalize">By Toni Jenson</p>
+              <p class="card_description">
+                This memoir about the author's relationship with gun violence
+                feels both expansive and intimate, resulting in a lyrical
+                indictment of the way things are.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_six">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover6.jpg"
+                alt="bookCover16"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 7 -->
+            <div class="card_seven">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Days of Distraction</p>
+              <p class="card_name_capitalize">By Alexandra Chang</p>
+              <p class="card_description">
+                A sardonic view of Silicon Valley culture, a meditation on race,
+                and a journal of displacement and belonging, all in one
+                form-defying package of spare prose.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_seven">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover7.jpg"
+                alt="bookCover7"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 8 -->
+            <div class="card_eight">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Dominicana</p>
+              <p class="card_name_capitalize">By Angie Cruz</p>
+              <p class="card_description">
+                A fascinating story of a teenage girl who marries a man twice
+                her age with the promise to bring her to America. Her marriage
+                is an opportunity for her family to eventually immigrate. For
+                fans of Isabel Allende and Julia Alvarez.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_eight">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover8.jpg"
+                alt="bookCover8"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 9 -->
+            <div class="card_nine">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Crude: A Memoir</p>
+              <p class="card_name_capitalize">
+                By Pablo Fajardo & Sophie Tardy-Joubert
+              </p>
+              <p class="card_description">
+                Drawing and color by Damien Roudeau | This book illustrates the
+                struggles of a group of indigenous Ecuadoreans as they try to
+                sue the ChevronTexaco company for damage their oil fields did to
+                the Amazon and her people
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_nine">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover9.jpg"
+                alt="bookCover9"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 10 -->
+            <div class="card_ten">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Let My People Go Surfing</p>
+              <p class="card_name_capitalize">By Yvon Chouinard</p>
+              <p class="card_description">
+                Chouinard—climber, businessman, environmentalist—shares tales of
+                courage and persistence from his experience of founding and
+                leading Patagonia, Inc. Full title: Let My People Go Surfing:
+                The Education of a Reluctant Businessman, Including 10 More
+                Years of Business Unusual.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_ten">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover10.jpg"
+                alt="bookCover10"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 11 -->
+            <div class="card_eleven">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">The Octopus Museum: Poems</p>
+              <p class="card_name_capitalize">By Brenda Shaughnessy</p>
+              <p class="card_description">
+                This collection of bold and scathingly beautiful feminist poems
+                imagines what comes after our current age of environmental
+                destruction, racism, sexism, and divisive politics.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_eleven">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover11.jpg"
+                alt="bookCover11"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 12 -->
+            <div class="card_twelve">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Shark Dialogues: A Novel</p>
+              <p class="card_name_capitalize">By Kiana Davenport</p>
+              <p class="card_description">
+                An epic saga of seven generations of one family encompasses the
+                tumultuous history of Hawaii as a Hawaiian woman gathers her
+                four granddaughters together in an erotic tale of villains and
+                dreamers, queens and revolutionaries, lepers and healers.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_twelve">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover12.jpg"
+                alt="bookCover12"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 13 -->
+            <div class="card_thirteen">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Casual Conversation</p>
+              <p class="card_name_capitalize">By Renia White</p>
+              <p class="card_description">
+                White's impressive debut collection takes readers through and
+                beyond the concepts of conversation and the casual - both what
+                we say to each other and what we don't, examining the
+                possibilities around how we construct and communicate identity.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_thirteen">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover13.jpg"
+                alt="bookCover13"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 14 -->
+            <div class="card_fourteen">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">The Great Fire</p>
+              <p class="card_name_capitalize">By Lou Ureneck</p>
+              <p class="card_description">
+                The harrowing story of an ordinary American and a principled
+                Naval officer who, horrified by the burning of Smyrna, led an
+                extraordinary rescue effort that saved a quarter of a million
+                refugees from the Armenian Genocide
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_fourteen">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover14.jpg"
+                alt="bookCover14"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 15 -->
+            <div class="card_fifteen">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Rickey: The Life and Legend</p>
+              <p class="card_name_capitalize">By Howard Bryant</p>
+              <p class="card_description">
+                With the fall rolling around, one can't help but think of
+                baseball's postseason coming up! And what better way to prepare
+                for it than reading the biography of one of the game's all-time
+                greatest performers, the Man of Steal, Rickey Henderson?
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_fifteen">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover15.jpg"
+                alt="bookCover15"
+                class="card_img"
+              >
+            </div>
+            <!-- карточка 16 -->
+            <div class="card_sixteen">
+              <p class="card_header">Staff Pick</p>
+              <div class="card_horizontal_line"></div>
+              <p class="card_name_uppercase">Slug: And Other Stories</p>
+              <p class="card_name_capitalize">By Megan Milks</p>
+              <p class="card_description">
+                Exes Tegan and Sara find themselves chained together by
+                hairballs of codependency. A father and child experience the
+                shared trauma of giving birth to gods from their wounds.
+              </p>
+              <form>
+                <button disabled class="card_button" id="card_button_sixteen">
+                  Buy
+                </button>
+              </form>
+              <img
+                src="/rsschool-cv/library/Image/bookСover16.jpg"
+                alt="bookCover16"
+                class="card_img"
+              >
             </div>
           </div>
         </section>
 
         <!-- Section Coffee Shop -->
 
-        <section>
+        <section id="section1">
           <h2 id="link_CoffeeShop" class="main_h2">Coffee Shop</h2>
           <div class="main_horizontal_line"></div>
           <div class="text_cofeeShop">
@@ -359,7 +656,7 @@
         </section>
 
         <!-- Section Our Contacts -->
-        <section>
+        <section id="section1">
           <h2 id="link_Contacts" class="main_h2">Our Contacts</h2>
           <div class="main_horizontal_line"></div>
           <div class="contacts_container">
@@ -426,7 +723,7 @@
 
         <!-- Section Digital Library Cards -->
 
-        <section>
+        <section id="section1">
           <h2 id="link_LibraryCard" class="main_h2">Digital Library Cards</h2>
           <div class="main_horizontal_line"></div>
           <div class="libraryCard_container">
@@ -471,14 +768,20 @@
               </p>
               <div class="libraryCard_button_container">
                 <form>
-                  <button class="libraryCard_button_ReaderCard">
+                  <button
+                    class="libraryCard_button_ReaderCard_SingApp"
+                    id="libraryCard_button_SingApp"
+                  >
                     <span class="libraryCard_button_ReaderCard_span"
                       >Sign Up</span
                     >
                   </button>
                 </form>
                 <form>
-                  <button class="libraryCard_button_ReaderCard">
+                  <button
+                    class="libraryCard_button_ReaderCard_LogIn"
+                    id="libraryCard_button_LogIn"
+                  >
                     <span class="libraryCard_button_ReaderCard_span"
                       >Log in</span
                     >
@@ -542,7 +845,9 @@
               href="https://github.com/EvgeniyPivovarov"
               target="_blank"
               class="personal_information_right"
-              >EvgeniyPivovarov</a
+              ><span class="personal_information_right_class"
+                >EvgeniyPivovarov</span
+              ></a
             >
           </div>
         </div>
