@@ -1499,24 +1499,6 @@ a {
     row-gap: 30px;
   }
 
-  /* .nav_ul {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-items: flex-end;
-    position: initial;
-    margin-right: 40px;
-    display: none;
-  } */
-  /* .burger {
-    display: block;
-    position: relative;
-    width: 40px;
-    height: 20px;
-    margin-left: 20px;
-    margin-right: 20px;
-    cursor: pointer;
-  } */
   .shop_menu {
     position: relative;
     display: flex;
