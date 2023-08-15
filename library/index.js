@@ -1,6 +1,6 @@
  const burger = document?.querySelector('[data-burger]');
  const nav = document?.querySelector('[data-nav]');
- const navLi = document?.querySelectorAll('.nav_li')
+ const navLi = document?.querySelectorAll('.nav_li');
 
 
   burger?.addEventListener('click', () => {
