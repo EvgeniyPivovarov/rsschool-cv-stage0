@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Library</title>
     <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="/rsschool-cv/library/index.js"></script>
+    <script defer src="/rsschool-cv/library/index.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -24,9 +24,9 @@
     <div class="container">
       <header class="container_header">
         <h1 class="style_h1">Brooklyn Public Library</h1>
-        <nav class="nav_conrainer">
+        <nav class="nav" data-nav>
           <ul class="nav_ul">
-            <li class="nav_li"><a href="#link_About">About</a></li>
+            <li class="nav_li" id="nav_li_id"><a href="#link_About">About</a></li>
             <li class="nav_li"><a href="#link_Favorites">Favorites</a></li>
             <li class="nav_li"><a href="#link_CoffeeShop">Coffee Shop</a></li>
             <li class="nav_li"><a href="#link_Contacts">Contacts</a></li>
@@ -38,7 +38,8 @@
           alt="icon_profile"
           class="nav_img"
         >
-        <div class="burger" id="burger"><span></span></div>
+        <button class="burger" data-burger aria-label="Открыть меню" aria-expanded="false"><span class="burger__line"></span></button>
+        <!-- <div class="burger"><span></span></div> -->
       </header>
 
       <main>
